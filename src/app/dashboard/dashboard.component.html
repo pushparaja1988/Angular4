@@ -1,0 +1,13 @@
+<p>
+    Hello {{name}}!! You are now Authenticated....
+    <a routerLink="/">Go Back</a>
+</p>
+
+<button (click)="getService()">Get</button>
+<div *ngFor="let post of posts | async">
+    {{post | json }}
+</div>
+
+<div>
+    <button (click)="postService()">Post</button> {{getPosts | async | json}}
+</div>

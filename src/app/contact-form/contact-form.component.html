@@ -1,0 +1,19 @@
+<div class="container">
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" class="form-control" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" class="form-control" ngModel>
+        </div>
+        <select name="languages" ngModel>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Angular">Angular</option>            
+            <option value="Android">Android</option>
+        </select>
+        <input type="submit" value="submit">
+    </form>
+</div>

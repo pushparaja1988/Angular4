@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-form1',
+  templateUrl: './form1.component.html',
+  styleUrls: ['./form1.component.scss']
+})
+export class Form1Component implements OnInit {
+
+ languages = ['Angular4','Node','MangoDB'];
+  constructor() { }
+
+  ngOnInit() {
+
+    
+  }
+  submitted = false;
+
+  onSubmit(emp){
+    this.submitted = true;
+    console.log(emp.target.elements[0].value);
+  }
+
+}

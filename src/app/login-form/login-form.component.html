@@ -1,0 +1,15 @@
+<form (submit)="loginUser($event)">
+    <div class="input ">
+        <label>UserName</label>
+        <input type="text ">
+    </div>
+    <div class="input ">
+        <label>Password</label>
+        <input type="password ">
+    </div>
+    <div class="input ">
+        <input type="submit" value="login">
+    </div>
+    <p *ngIf="failureLogin == 0"><b>Login Failed</b></p>
+
+</form>

@@ -1,0 +1,38 @@
+<div id="fullpage">
+    <app-header></app-header>
+
+    <router-outlet></router-outlet>
+    <!--<app-login-form></app-login-form>-->
+
+    <app-footer></app-footer>
+
+</div>
+
+
+
+<!--<h1 greenColor *vfdngIf="visible; then evenClicked else oddClicked">
+    Welcome to {{title}}!
+</h1>
+<button (click)="toggleH3()">Toggle H3</button>
+<ul>
+    <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+    <li><a routerLink="about" routerLinkActive="active">About</a></li>
+</ul>
+
+<div *ngIf="myFavLang.backEnd; let RandomVariable">
+    Yep!{{RandomVariable.join(',')}}
+</div>
+
+<ul>
+    <li *ngFor="let skill of mySkills ; let i = index ; let even = even;">
+        <p *ngIf="even">{{i}} . {{skill.name}} - {{skill.type}}</p>
+    </li>
+</ul>
+
+<!--<input type="text" bind-value="result" on-keydown="myFunction($event)">-->
+<!--
+<h2>Hello {{username}}!</h2>
+<input type="text" [(ngModel)]="username">
+<ng-template #oddClicked>oddClicked template called</ng-template>
+<ng-template #evenClicked>evenClicked template called</ng-template>
+<router-outlet></router-outlet>-->
